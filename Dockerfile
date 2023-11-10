@@ -2,7 +2,7 @@
 FROM python:3.11.1
 
 # Work directory
-WORKDIR /app
+WORKDIR /products
 
 # Copy requirements and install dependencies
 COPY requirements.txt requirements.txt
