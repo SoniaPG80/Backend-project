@@ -2,7 +2,7 @@
 FROM python:3.11.1
 
 # Work directory
-WORKDIR /hola
+WORKDIR /app
 
 # Copy requirements and install dependencies
 COPY requirements.txt requirements.txt
@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 5000
 
 # Command to run on server
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "hola:hola"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "app:app"]
